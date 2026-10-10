@@ -1,0 +1,2 @@
+model,suite,description,use_adv_ce,use_trades,use_supcon,use_vib,acc_clean,acc_adv,n_test,epochs_run,wall_s,monitor,best_val,drop,acc_cl_ecl,acc_ad_ecl,acc_cl_rrlyr,acc_ad_rrlyr,acc_cl_cep,acc_ad_cep,acc_cl_lpv,acc_ad_lpv
+loo_no_adv_ce,leave_one_out,Full objective without adversarial CE,False,True,True,True,0.9818691037735849,0.9770047169811321,13568,25,6089.285752058029,val_acc_ad,0.9756780862808228,0.004864386792452824,0.98175,0.97475,0.98375,0.98225,0.9438775510204082,0.9387755102040817,0.995,0.989

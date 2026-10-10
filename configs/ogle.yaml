@@ -1,0 +1,77 @@
+dataset:
+  name: ogle
+  catalog: "Data/OGLE-III/OGLE_dataset.dat"
+  lcs_dir: "Data/OGLE-III/LCs"
+  columns:
+    time: 0
+    magnitude: 1
+    magnitude_error: 2
+  format: "whitespace_no_header"
+  catalog_id_col: "ID"
+  catalog_class_col: "Class"
+  catalog_path_col: "Path"
+  label_inference: "ogle_path_token"
+  classes: ["ecl", "rrlyr", "cep", "lpv"]
+  # Balanced to the smallest class (cep ≈ 7,836). Maximizes use of catalog
+  # while keeping classes balanced — no resampling tricks needed.
+  max_per_class: 7836
+  min_obs: 30
+  seq_len: 200
+
+split:
+  test_size: 0.2
+  val_size: 0.15
+  random_state: 42
+  stratify: true
+
+attack:
+  k: 1.0
+  steps: 20
+  step_frac: 0.25
+  random_start: true
+  raw_projection: false  # notebook mode: bound only |δΔm|<=k·σ_Δm in scaled space
+  smooth_lambda: 1.0e-3
+  perturbation_fractions: [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
+
+models:
+  rf:
+    n_estimators: 300
+    max_depth: 25
+  cnn:
+    filters1: 64
+    filters2: 32
+    kernel1: 15
+    kernel2: 11
+    stride: 2
+    dropout: 0.3
+    hidden: 128
+    epochs: 200
+    batch_size: 256
+    patience: 15
+  rnn:
+    hidden: 64
+    epochs: 200
+    batch_size: 256
+    cell: "gru"
+    patience: 15
+  vae:
+    latent_dim: 16
+    epochs: 50
+    batch_size: 256
+    beta_kl: 0.001
+    warmup_epochs: 5
+  infovae:
+    latent_dim: 16
+    epochs: 80
+    batch_size: 256
+    beta_mmd: 5.0
+    huber_delta: 1.0
+    eps0: 0.001
+    reconstruction_loss:
+      type: "huber"
+      error_weighting: "per_sample"
+    classifier_hidden: 128
+    lambda_rec: 1.0
+    lambda_cls: 1.0
+
+seed: 42

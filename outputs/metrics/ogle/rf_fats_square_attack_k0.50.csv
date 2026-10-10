@@ -1,0 +1,3 @@
+attack,k,model,acc,n_eval,n_iter
+clean,0.0,RF-FATS16,0.96875,800,0
+square_fats,0.5,RF-FATS16,0.90375,800,559

@@ -1,0 +1,2 @@
+model,attack,survey,k,steps,restarts,n_subsample,acc_clean_sub,acc_adv_sub,drop
+RRE,adaptive_pgd_subsample,ogle,0.5,40,5,800,0.97625,0.9725,-0.00374999999999992

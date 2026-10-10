@@ -1,0 +1,2 @@
+model,attack,survey,k,n_subsample,iters_run,acc_clean_sub,acc_adv_sub,drop,median_queries_to_success,wall_time_s
+L5-raw,square_blackbox,ogle,0.5,800,1000,0.97625,0.97375,-0.0024999999999999467,0.0,596.9308981895447

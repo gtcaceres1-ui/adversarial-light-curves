@@ -1,0 +1,2 @@
+model,survey,acc_clean,acc_transferred,acc_adaptive,k,train_steps,eval_steps,eval_restarts,best_epoch,wall_time_s,n_test
+AT-CNN,gaia,0.8705913088914047,0.8567447531132979,0.8550901332404424,0.5,3,40,5,14,1993.6852898597717,11483

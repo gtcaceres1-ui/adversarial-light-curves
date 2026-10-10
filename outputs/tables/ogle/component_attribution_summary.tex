@@ -1,0 +1,15 @@
+\begin{tabular}{llrrr}
+\toprule
+label & description & acc_clean & acc_adv & drop_pp \\
+\midrule
+L1 & CE only & 0.988 & 0.916 & 7.193 \\
+L2 & CE + AdvCE & 0.984 & 0.979 & 0.450 \\
+L3 & CE + AdvCE + TRADES & 0.982 & 0.979 & 0.317 \\
+L4 & CE + AdvCE + TRADES + SupCon & 0.984 & 0.982 & 0.273 \\
+L5 & CE + AdvCE + TRADES + SupCon + VIB & 0.983 & 0.979 & 0.383 \\
+TRADES-only & CE + TRADES, no AdvCE & 0.983 & 0.979 & 0.369 \\
+SupCon-only & CE + SupCon, no AdvCE/TRADES & 0.988 & 0.943 & 4.444 \\
+Aux-no-AdvCE & CE + TRADES + SupCon + VIB, no AdvCE & 0.982 & 0.977 & 0.486 \\
+VIB-only & CE + VIB (beta=5e-4), no adversarial component & 0.985 & 0.905 & 8.011 \\
+\bottomrule
+\end{tabular}

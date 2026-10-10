@@ -1,0 +1,2 @@
+model,attack,survey,k,steps,restarts,acc_clean,acc_adv,drop,n_valid
+L5-raw,adaptive_pgd_dlr,ogle,0.5,100,1,0.9830483490566038,0.9730984669811321,-0.00994988207547165,13568

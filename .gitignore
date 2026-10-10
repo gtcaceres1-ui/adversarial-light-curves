@@ -1,0 +1,35 @@
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Raw survey data, generated adversarial sets, checkpoints, caches
+Data/
+external/
+runs/
+outputs/adversarial/
+outputs/checkpoints/
+outputs/predictions/
+outputs/logs/
+outputs/astromer_clf_ogle/
+*.keras
+*.h5
+*.joblib
+*.npz
+*.log
+
+# LaTeX build products
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.out
+paper/*.synctex.gz
+paper/*.fls
+paper/*.fdb_latexmk

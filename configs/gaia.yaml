@@ -1,0 +1,78 @@
+dataset:
+  name: gaia
+  catalog: "Data/Gaia/GAIA_dataset.dat"
+  lcs_dir: "Data/Gaia/LCs"
+  columns:
+    time: "time"
+    magnitude: "mag"
+    magnitude_error: "mag_err"
+  format: "csv_with_header"
+  catalog_id_col: "ID"
+  catalog_class_col: "Class"
+  catalog_path_col: "Path"
+  label_inference: "catalog_class"
+  # Group raw Gaia classes into the 5 paper classes
+  class_groups:
+    DSCT: ["DSCT", "DELTA_SCUTI", "DSCT_SXPHE_GDOR"]
+    MIRA_SR: ["MIRA_SR", "MIRA"]
+    RRLYR: ["RRAB", "RRC", "RRD", "RR_LYRAE"]
+    T1CEP: ["DCEP", "CEP", "TYPE_I_CEP"]
+    T2CEP: ["T2CEP", "BLHER", "WVIR", "RVTAU", "TYPE_II_CEP"]
+  classes: ["DSCT", "MIRA_SR", "RRLYR", "T1CEP", "T2CEP"]
+  max_per_class: 200
+  min_obs: 10
+  seq_len: 100
+
+split:
+  test_size: 0.2
+  val_size: 0.15
+  random_state: 42
+  stratify: true
+
+attack:
+  k: 1.0
+  steps: 20
+  step_frac: 0.25
+  random_start: true
+  perturbation_fractions: [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
+
+models:
+  rf:
+    n_estimators: 100
+    max_depth: 20
+  cnn:
+    filters1: 32
+    filters2: 16
+    kernel1: 11
+    kernel2: 7
+    stride: 2
+    dropout: 0.5
+    hidden: 64
+    epochs: 5
+    batch_size: 128
+  rnn:
+    hidden: 32
+    epochs: 5
+    batch_size: 128
+    cell: "gru"
+  vae:
+    latent_dim: 16
+    epochs: 5
+    batch_size: 128
+    beta_kl: 0.001
+    warmup_epochs: 2
+  infovae:
+    latent_dim: 16
+    epochs: 5
+    batch_size: 128
+    beta_mmd: 5.0
+    huber_delta: 1.0
+    eps0: 0.001
+    reconstruction_loss:
+      type: "huber"
+      error_weighting: "per_sample"
+    classifier_hidden: 64
+    lambda_rec: 1.0
+    lambda_cls: 1.0
+
+seed: 42

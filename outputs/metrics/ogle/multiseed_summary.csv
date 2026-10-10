@@ -1,0 +1,2 @@
+level,n_seeds,acc_clean_mean,acc_clean_std,acc_adv_mean,acc_adv_std,drop_mean,drop_std,seeds
+3,1,0.9817954009433962,,0.9786261792452832,,0.0031692216981131,,42

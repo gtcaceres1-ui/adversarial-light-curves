@@ -1,0 +1,2 @@
+model,survey,acc_clean,acc_transferred,acc_adaptive,k,train_steps,eval_steps,eval_restarts,best_epoch,wall_time_s,n_test
+AT-CNN,ogle,0.9538620283018868,0.9330041273584906,0.9039652122641509,0.5,3,40,5,14,3821.1847949028015,13568

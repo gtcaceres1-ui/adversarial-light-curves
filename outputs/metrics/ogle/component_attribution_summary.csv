@@ -1,0 +1,10 @@
+model,label,suite,description,use_adv_ce,use_trades,use_supcon,use_vib,acc_clean,acc_adv,drop,n_test
+l1,L1,incremental,CE only,False,False,False,False,0.9875442216981132,0.9156102594339622,0.07193396226415094,13568
+l2,L2,incremental,CE + AdvCE,True,False,False,False,0.9838590801886793,0.9793632075471698,0.004495872641509524,13568
+l3,L3,incremental,CE + AdvCE + TRADES,True,True,False,False,0.9817954009433962,0.9786261792452831,0.0031692216981131782,13568
+l4,L4,incremental,CE + AdvCE + TRADES + SupCon,True,True,True,False,0.9844487028301887,0.9817216981132075,0.002727004716981174,13568
+l5,L5,incremental,CE + AdvCE + TRADES + SupCon + VIB,True,True,True,True,0.9830483490566038,0.9792158018867925,0.0038325471698112956,13568
+single_trades,TRADES-only,single_component,"CE + TRADES, no AdvCE",False,True,False,False,0.9830483490566038,0.9793632075471698,0.003685141509433998,13568
+single_supcon,SupCon-only,single_component,"CE + SupCon, no AdvCE/TRADES",False,False,True,False,0.9876916273584906,0.9432488207547169,0.044442806603773644,13568
+loo_no_adv_ce,Aux-no-AdvCE,auxiliary_without_adv_ce,"CE + TRADES + SupCon + VIB, no AdvCE",False,True,True,True,0.9818691037735849,0.9770047169811321,0.004864386792452824,13568
+vib_only_b5e-04,VIB-only,single_component,"CE + VIB (beta=5e-4), no adversarial component",False,False,False,True,0.9847435141509434,0.9046285377358491,0.08011497641509435,13568

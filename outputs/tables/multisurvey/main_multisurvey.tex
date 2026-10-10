@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\centering
+\caption{Clean and transferred-attack test accuracy for the CNN surrogate, feature-based RF baseline, and L5-raw. Drop is clean minus adversarial accuracy in percentage points.}
+\label{tab:main_multisurvey}
+\begin{tabular}{llccc}
+\toprule
+Survey & Model & Clean & Adversarial & Drop (pp)\\
+\midrule
+\multirow{3}{*}{OGLE-III} & CNN & 0.964 & 0.658 & 30.6\\
+ & RF & 0.976 & 0.925 & 5.0\\
+ & \textbf{L5-raw} & 0.983 & 0.979 & 0.4\\
+\midrule
+\multirow{3}{*}{\textit{Gaia} DR2} & CNN & 0.868 & 0.850 & 1.7\\
+ & RF & 0.923 & 0.921 & 0.2\\
+ & \textbf{L5-raw} & 0.911 & 0.906 & 0.5\\
+\midrule
+\multirow{3}{*}{WISE} & CNN & 0.914 & 0.821 & 9.3\\
+ & RF & 0.926 & 0.903 & 2.3\\
+ & \textbf{L5-raw} & 0.932 & 0.928 & 0.4\\
+\bottomrule
+\end{tabular}
+\end{table*}

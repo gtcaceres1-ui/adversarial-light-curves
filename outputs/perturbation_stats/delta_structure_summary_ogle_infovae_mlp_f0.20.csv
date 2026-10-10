@@ -1,0 +1,2 @@
+dataset,model,fraction,n_curves,acf1_med,acf1_q25,acf1_q75,acf2_med,acf3_med,acf1_null_med,frac_z_gt3,curv_ratio_med,curv_ratio_null_med,sign_agree_med,budget_med,sat_frac_med,curv_suppression
+ogle,infovae_mlp,0.2,6269,0.052303985867069476,-0.008894411279005046,0.11787795533475166,0.05016963778311266,0.04550178189609236,-0.005665971091423826,0.07449353963949593,4.9,5.131112225317093,1.0,1.0,0.18,0.9549586492813826

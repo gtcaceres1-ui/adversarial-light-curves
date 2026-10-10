@@ -1,0 +1,21 @@
+[
+  {
+    "dataset": "ogle",
+    "model": "infovae_mlp",
+    "fraction": 0.8,
+    "n_curves": 6269,
+    "acf1_med": 0.3339438058,
+    "acf1_q25": 0.094076781,
+    "acf1_q75": 0.5984199835,
+    "acf2_med": 0.293823472,
+    "acf3_med": 0.2573628834,
+    "acf1_null_med": -0.0053357148,
+    "frac_z_gt3": 0.6251395757,
+    "curv_ratio_med": 1.4070848998,
+    "curv_ratio_null_med": 2.1957166108,
+    "sign_agree_med": 0.9765625,
+    "budget_med": 1.0,
+    "sat_frac_med": 0.76,
+    "curv_suppression": 0.6408317416
+  }
+]

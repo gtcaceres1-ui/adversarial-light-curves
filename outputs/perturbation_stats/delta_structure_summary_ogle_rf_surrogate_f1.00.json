@@ -1,0 +1,21 @@
+[
+  {
+    "dataset": "ogle",
+    "model": "rf_surrogate",
+    "fraction": 1.0,
+    "n_curves": 6269,
+    "acf1_med": 0.7958327548,
+    "acf1_q25": 0.6198424048,
+    "acf1_q75": 0.8724626035,
+    "acf2_med": 0.6959730162,
+    "acf3_med": 0.6030868305,
+    "acf1_null_med": -0.0050089456,
+    "frac_z_gt3": 0.9314085181,
+    "curv_ratio_med": 0.3505034599,
+    "curv_ratio_null_med": 2.3514649736,
+    "sign_agree_med": 0.9595959596,
+    "budget_med": 1.0,
+    "sat_frac_med": 0.935,
+    "curv_suppression": 0.1490574871
+  }
+]

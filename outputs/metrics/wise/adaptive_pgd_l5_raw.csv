@@ -1,0 +1,6 @@
+model,attack,scope,k,steps,step_frac,restarts,parameterization,acc_clean,acc_adv,drop,n_valid
+L5-raw,adaptive_pgd,all,0.5,40,0.1,5,raw_magnitude_displacement,0.931640625,0.9246323529411765,-0.007008272058823484,8704
+L5-raw,adaptive_pgd,rrlyr,0.5,40,0.1,5,raw_magnitude_displacement,0.9845,0.9805,-0.0040000000000000036,4000
+L5-raw,adaptive_pgd,lpv,0.5,40,0.1,5,raw_magnitude_displacement,0.98575,0.98175,-0.0040000000000000036,4000
+L5-raw,adaptive_pgd,cep,0.5,40,0.1,5,raw_magnitude_displacement,0.47107438016528924,0.41115702479338845,-0.05991735537190079,484
+L5-raw,adaptive_pgd,dsct,0.5,40,0.1,5,raw_magnitude_displacement,0.0,0.0,0.0,220

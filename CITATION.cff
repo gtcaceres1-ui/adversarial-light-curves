@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the accompanying paper."
+title: "Adversarial robustness of variable-star classifiers within the photometric error budget"
+type: software
+repository-code: "https://github.com/gtcaceres1-ui/adversarial-light-curves"
+authors:
+  - family-names: "Cáceres"
+    given-names: "Gonzalo"
+  - family-names: "Pichara"
+    given-names: "Karim"
+  - family-names: "Catelan"
+    given-names: "Márcio"
+  - family-names: "Pérez-Galarce"
+    given-names: "Francisco"
+preferred-citation:
+  type: article
+  title: "Adversarial robustness of variable-star classifiers within the photometric error budget"
+  journal: "Astronomy & Astrophysics"
+  year: 2026
+  status: submitted
+  authors:
+    - family-names: "Cáceres"
+      given-names: "Gonzalo"
+    - family-names: "Pichara"
+      given-names: "Karim"
+    - family-names: "Catelan"
+      given-names: "Márcio"
+    - family-names: "Pérez-Galarce"
+      given-names: "Francisco"

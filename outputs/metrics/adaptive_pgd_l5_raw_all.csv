@@ -1,0 +1,16 @@
+survey,model,attack,scope,k,steps,step_frac,restarts,parameterization,acc_clean,acc_adv,drop,n_valid
+ogle,L5-raw,adaptive_pgd,all,0.5,40,0.1,5,raw_magnitude_displacement,0.9830483490566038,0.9731721698113207,-0.009876179245283057,13568
+ogle,L5-raw,adaptive_pgd,ecl,0.5,40,0.1,5,raw_magnitude_displacement,0.97675,0.95925,-0.01749999999999996,4000
+ogle,L5-raw,adaptive_pgd,rrlyr,0.5,40,0.1,5,raw_magnitude_displacement,0.9845,0.9745,-0.010000000000000009,4000
+ogle,L5-raw,adaptive_pgd,cep,0.5,40,0.1,5,raw_magnitude_displacement,0.9566326530612245,0.9432397959183674,-0.013392857142857095,1568
+ogle,L5-raw,adaptive_pgd,lpv,0.5,40,0.1,5,raw_magnitude_displacement,0.99825,0.9975,-0.0007499999999999174,4000
+gaia,L5-raw,adaptive_pgd,all,0.5,40,0.1,5,raw_magnitude_displacement,0.910998867891666,0.9035966210920491,-0.007402246799616874,11483
+gaia,L5-raw,adaptive_pgd,rrlyr,0.5,40,0.1,5,raw_magnitude_displacement,0.95375,0.94575,-0.008000000000000007,4000
+gaia,L5-raw,adaptive_pgd,lpv,0.5,40,0.1,5,raw_magnitude_displacement,0.94675,0.94225,-0.0044999999999999485,4000
+gaia,L5-raw,adaptive_pgd,cep,0.5,40,0.1,5,raw_magnitude_displacement,0.802223522527794,0.7928613224107666,-0.009362200117027486,1709
+gaia,L5-raw,adaptive_pgd,dsct,0.5,40,0.1,5,raw_magnitude_displacement,0.8387824126268321,0.8280721533258174,-0.010710259301014657,1774
+wise,L5-raw,adaptive_pgd,all,0.5,40,0.1,5,raw_magnitude_displacement,0.931640625,0.9246323529411765,-0.007008272058823484,8704
+wise,L5-raw,adaptive_pgd,rrlyr,0.5,40,0.1,5,raw_magnitude_displacement,0.9845,0.9805,-0.0040000000000000036,4000
+wise,L5-raw,adaptive_pgd,lpv,0.5,40,0.1,5,raw_magnitude_displacement,0.98575,0.98175,-0.0040000000000000036,4000
+wise,L5-raw,adaptive_pgd,cep,0.5,40,0.1,5,raw_magnitude_displacement,0.47107438016528924,0.41115702479338845,-0.05991735537190079,484
+wise,L5-raw,adaptive_pgd,dsct,0.5,40,0.1,5,raw_magnitude_displacement,0.0,0.0,0.0,220

@@ -1,0 +1,3 @@
+model,acc_clean,acc_adv,drop,k,steps,step_frac,restarts,parameterization,n_test
+L1,0.9340533088235294,0.8400735294117647,0.09397977941176472,0.5,40,0.1,5,raw_magnitude_displacement,8704
+L2,0.9353170955882353,0.92578125,0.009535845588235281,0.5,40,0.1,5,raw_magnitude_displacement,8704

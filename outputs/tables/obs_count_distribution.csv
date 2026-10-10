@@ -1,0 +1,4 @@
+survey,n_obj,ep_min,ep_p25,ep_median,ep_p75,ep_max,ep_mean,capped_at_500,median_ecl,median_rrlyr,median_cep,median_lpv,median_dsct
+ogle,13568,300,436,500,500,500,462.9927771226415,True,500.0,500,500,500,
+gaia,11483,4,15,23,30,230,24.63633196899765,False,,20,26,23,20.0
+wise,8704,19,28,48,84,161,59.77642463235294,False,,29,49,82,27.0

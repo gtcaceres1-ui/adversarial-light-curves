@@ -1,0 +1,5 @@
+class,n,acc_clean,acc_adv,median_queries_success
+ecl,200,0.98,0.81,19.5
+rrlyr,200,0.96,0.775,76.0
+cep,200,0.935,0.81,18.0
+lpv,200,1.0,0.825,89.0
