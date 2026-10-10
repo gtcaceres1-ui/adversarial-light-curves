@@ -145,6 +145,15 @@ The ASTROMER 2 probe reported in the paper is a standalone script with its
 own dependencies (TensorFlow 2.14, Keras 2); see the header of
 `scripts/eval_astromer_ogle.py`.
 
+## Adversarial light-curve dataset
+
+The adversarial test sets themselves (clean and adversarial magnitude for
+every epoch of every test star, for the three surveys) are released as a
+separate Zenodo deposit; the DOI will be added here once it is minted. They
+are built from the attack outputs with
+`scripts/package_adversarial_dataset.py`, which also re-checks the
+photometric bound on every observation before writing the files.
+
 ## Results shipped with the repository
 
 `outputs/metrics/` holds the CSV files every number in the paper is read
